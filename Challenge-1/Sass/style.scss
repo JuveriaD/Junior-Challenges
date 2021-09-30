@@ -1,0 +1,69 @@
+@import "grid";
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  .grid-item {
+    border-radius: 10px;
+    box-shadow: 5px 7px 16px 4px darkgrey;
+
+    .profile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      // width: fit-content;
+      img {
+        border-radius: 50px;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+    }
+    // .bigtext {
+    //   font-family: "Barlow Semi Condensed", sans-serif;
+    //   font-weight: 600;
+    //   display: inline-block;
+  }
+  h3 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    // color: $White;
+  }
+
+  .smalltext {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    display: inline-block;
+  }
+}
+main {
+  .grid1,
+  .grid2,
+  .grid4 {
+    .h3 {
+      color: $White;
+    }
+  }
+}
+
+footer {
+  .attribution {
+    font-size: 13px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(202, 94%, 21%);
+  }
+}
+
+@import "mediaqueries";
