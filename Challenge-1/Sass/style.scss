@@ -3,12 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 main {
-  height: 100%;
+  height: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  h1 {
+    display: none;
+  }
+  // h2 {
+  //  visibility: hidden;
+  // }
   .grid-item {
     border-radius: 10px;
     box-shadow: 5px 7px 16px 4px darkgrey;
@@ -27,31 +34,49 @@ main {
         flex-direction: column;
         flex-wrap: wrap;
         padding: 10px;
+
+        .Verified {
+          color: $Light-gray;
+        }
       }
     }
-    // .bigtext {
-    //   font-family: "Barlow Semi Condensed", sans-serif;
-    //   font-weight: 600;
-    //   display: inline-block;
   }
-  h3 {
+  .heading {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 600;
-    // color: $White;
+    // width: 380px;
   }
 
   .smalltext {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 500;
     display: inline-block;
+    font-size: 13px;
   }
 }
 main {
   .grid1,
   .grid2,
   .grid4 {
-    .h3 {
+    .name {
       color: $White;
+    }
+    
+    .heading {
+      color: $White;
+    }
+    .smalltext {
+      // color: lighten($Very-dark-grayish-blue, 50%);
+      color: lighten($Very-dark-grayish-blue, 50%);
+    }
+  }
+  .grid3,
+  .grid5 {
+    // .Verified {
+    //   color: darken($Light-gray, 50%);
+    // }
+    .smalltext {
+      color: $Very-dark-grayish-blue;
     }
   }
 }
